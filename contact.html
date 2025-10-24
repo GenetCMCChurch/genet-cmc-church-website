@@ -8,34 +8,64 @@
 </head>
 <body>
 
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="events.html">Events</a></li>
-      <li><a href="departments.html">Departments</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
-
+  <!-- Header with Logo and Navigation -->
   <header>
+    <div class="header-top">
+      <img src="images/logo.png" alt="CMC Church Logo" class="logo">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="departments.html">Departments</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
     <h1>Contact Us</h1>
   </header>
 
+  <!-- Main Content -->
   <main>
-    <p>Email: <a href="mailto:info@cmcgenetchurch.org">genetchurchcmc@gmail.com</a></p>
-    <p>Phone: +251 919078605</p>
-    <p>Address: CMC Branch, Addis Ababa, Ethiopia</p>
+    <section class="contact-info">
+      <h2>Our Contact Information</h2>
+      <p>Email: <a href="mailto:genetchurchcmc@gmail.com">genetchurchcmc@gmail.com</a></p>
+      <p>Phone: +251 919078605</p>
+      <p>Address: CMC Branch, Addis Ababa, Ethiopia</p>
+    </section>
 
-    <h2>Follow Us</h2>
-    <p>
-      <a href="https://facebook.com" target="_blank">Facebook</a> |
-      <a href="https://instagram.com" target="_blank">Instagram</a> |
-      <a href="https://youtube.com" target="_blank">YouTube</a>
-    </p>
+    <section class="contact-follow">
+      <h2>Follow Us</h2>
+      <p>
+        <a href="https://facebook.com" target="_blank">Facebook</a> |
+        <a href="https://instagram.com" target="_blank">Instagram</a> |
+        <a href="https://youtube.com" target="_blank">YouTube</a>
+      </p>
+    </section>
+
+    <section class="contact-form">
+      <h2>Send Us a Message</h2>
+      <form action="#" method="POST">
+        <label for="name">Your Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Your Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
   </main>
 
+  <!-- Footer -->
   <footer>
+    <p>Follow us on:</p>
+    <a href="https://facebook.com" target="_blank">Facebook</a> |
+    <a href="https://instagram.com" target="_blank">Instagram</a> |
+    <a href="https://youtube.com" target="_blank">YouTube</a>
     <p>&copy; 2025 CMC Branch Genet Church</p>
   </footer>
 
