@@ -8,39 +8,63 @@
 </head>
 <body>
 
-  <!-- Header with Logo and Navigation -->
+  <!-- Header with Navigation -->
   <header>
     <div class="header-top">
-      <img src="images/logo.png" alt="CMC Church Logo" class="logo">
+      <!-- Logo -->
+      <div id="logo">
+        <img src="images/logo.png" alt="CMC Branch Genet Church Logo">
+      </div>
+
+      <!-- Navigation Bar -->
       <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="events.html">Events</a></li>
-        <li><a href="departments.html">Departments</a></li>
-        <li><a href="deacons.html">Deacons</a></li>
-        <li><a href="finances.html" class="active">Finances</a></li>
-        <li><a href="fellowshipteam.html" class="active">Fellowship Team</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="departments.html">Departments</a></li>
+          <li><a href="deacons.html">Deacons</a></li>
+          <li><a href="finances.html">Finances</a></li>
+          <li><a href="marriage.html">Marriage</a></li>
+          <li><a href="fellowshipteam.html">Fellowship Team</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          
+        </ul>
       </nav>
     </div>
-    <h1>Media Gallery</h1>
   </header>
+
+  <h1>Media Gallery</h1>
 
   <!-- Main Content -->
   <main>
-    <section class="media-description">
-      <p>Explore moments from our church events, celebrations, and activities captured in pictures.</p>
+    <section class="media-intro">
+      <p>Explore photos and videos from Genet CMC Local Church events, ministries, and community activities. Stay connected and see how we worship, serve, and celebrate together.</p>
     </section>
 
-    <section class="media-gallery">
-      <h2>Gallery</h2>
+    <!-- Photos Section -->
+    <section class="media-photos">
+      <h2>Photo Gallery</h2>
       <div class="pictures-grid">
-        <img src="images/media1.jpg" alt="Church Event 1">
-        <img src="images/media2.jpg" alt="Church Event 2">
-        <img src="images/media3.jpeg" alt="Church Event 3">
-        <img src="images/media4.jpeg" alt="Church Event 4">
+        <img src="images/worship-service.jpg" alt="Worship Service">
+        <img src="images/youth-event.jpg" alt="Youth Event">
+        <img src="images/community-outreach.jpg" alt="Community Outreach">
+        <img src="images/church-celebrations.jpg" alt="Church Celebration">
+      </div>
+    </section>
+
+    <!-- Videos Section -->
+    <section class="media-videos">
+      <h2>Video Highlights</h2>
+      <div class="videos-grid">
+        <video controls>
+          <source src="videos/worship-service.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <video controls>
+          <source src="videos/youth-event.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
       </div>
     </section>
   </main>
