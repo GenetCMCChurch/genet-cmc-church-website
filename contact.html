@@ -3,54 +3,74 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About | Genet CMC Local Church</title>
+  <title>Contact | Genet CMC Local Church</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Header with Logo and Navigation -->
+  <!-- Header with Navigation and Logo -->
   <header>
     <div class="header-top">
-      <img src="images/logo.png" alt="CMC Church Logo" class="logo">
+      <div id="logo">
+        <img src="images/logo.png" alt="Genet CMC Local Church Logo">
+      </div>
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="about.html">About</a></li>
           <li><a href="events.html">Events</a></li>
           <li><a href="departments.html">Departments</a></li>
           <li><a href="deacons.html">Deacons</a></li>
           <li><a href="finances.html">Finances</a></li>
           <li><a href="marriage.html">Marriage</a></li>
           <li><a href="fellowshipteam.html">Fellowship Team</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
         </ul>
       </nav>
     </div>
-    <h1>About Our Church</h1>
+    <h1>Contact Us</h1>
   </header>
 
   <!-- Main Content -->
   <main>
-    <section class="about-text">
-      <p>Genet CMC Local Church is dedicated to serving the community and spreading the gospel. Our members engage in worship, service, and fellowship to strengthen faith and encourage spiritual growth.</p>
-      
-      <h2>Our Beliefs</h2>
-      <ul>
-        <li>Faith in Jesus Christ</li>
-        <li>Community Service</li>
-        <li>Love and Compassion</li>
-      </ul>
+    <section class="contact-section">
+      <h2>We’d Love to Hear From You</h2>
+      <p>If you have any questions, prayer requests, or want to know more about our church, please reach out to us using the form below.</p>
+
+      <!-- Contact Form -->
+      <form action="#" method="post" class="contact-form">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name" required>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="Your email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+
+      <!-- Contact Information -->
+      <div class="contact-info">
+        <h3>Our Contact Details</h3>
+        <p><strong>Address:</strong> Genet CMC Local Church, Addis Ababa, Ethiopia</p>
+        <p><strong>Phone:</strong> +251 919 078 605</p>
+        <p><strong>Email:</strong> genetchurchcmc@gmail.com</p>
+      </div>
     </section>
 
-    <!-- Pictures Section -->
-    <section class="about-pictures">
-      <h2>Our Church in Pictures</h2>
-      <div class="pictures-grid">
-        <img src="images/pic1.jpg" alt="Church Worship">
-        <img src="images/pic2.jpg" alt="Church Event">
-        <img src="images/pic3.jpg" alt="Community Service">
-        <img src="images/pic4.jpg" alt="Church Fellowship">
-      </div>
+    <!-- Map (Optional) -->
+    <section class="map-section">
+      <h2>Find Us on the Map</h2>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15955.211111!2d38.763611!3d9.010793!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b85bcd47689ab%3A0x66f23a77b37ce3a!2sAddis%20Ababa%2C%20Ethiopia!5e0!3m2!1sen!2set!4v1700123456789"
+        width="100%"
+        height="350"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy">
+      </iframe>
     </section>
   </main>
 
