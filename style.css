@@ -167,3 +167,28 @@ footer a:hover {
   cursor: pointer;
   font-size: 18px;
 }
+
+/* ===== Weather Aside ===== */
+aside {
+  background: #f4f7fb;
+  padding: 15px;
+  margin: 20px;
+  border-radius: 10px;
+  max-width: 260px;
+  font-family: Arial, sans-serif;
+}
+
+#weather h3 {
+  margin-top: 0;
+  font-size: 1.1rem;
+  color: #2c3e50;
+}
+
+#weather p {
+  margin: 5px 0;
+  font-size: 0.95rem;
+}
+
+#temp {
+  font-weight: bold;
+}

@@ -63,4 +63,24 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
+    // ===== Weather for Addis Ababa =====
+    const apiKey = "299e225cd202c97fec4cfc141885d8b0"; // my real api key
+    const city = "Addis Ababa";
+
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`)
+        .then(response => response.json())
+        .then(data => {
+            const tempEl = document.getElementById("temp");
+            const descEl = document.getElementById("desc");
+            if (tempEl && descEl) {
+                tempEl.textContent = "Temperature: " + data.main.temp + " °C";
+                descEl.textContent = "Condition: " + data.weather[0].description;
+            }
+        })
+        .catch(() => {
+            const tempEl = document.getElementById("temp");
+            if (tempEl) tempEl.textContent = "Weather not available";
+        });
+
+
 });
